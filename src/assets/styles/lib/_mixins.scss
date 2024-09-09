@@ -222,7 +222,14 @@
 	@return $number;
 }
 
-@mixin smoothValue($prop, $min, $max, $minViewPort: $mobile, $maxViewPort: $desktop, $minScreen: true) {
+@mixin smoothValue(
+	$prop,
+	$min,
+	$max,
+	$minViewPort: $mobile,
+	$maxViewPort: $desktop,
+	$minScreen: true
+) {
 	@if $minScreen {
 		@media (min-width: $minViewPort) {
 			#{$prop}: $max;
@@ -230,7 +237,11 @@
 	}
 	@media (min-width: $minViewPort) and (max-width: ($maxViewPort - 1)) {
 		#{$prop}: calc(
-			#{$min} + #{strip-unit($max - $min)} * ((100vw - #{$minViewPort}) / (#{strip-unit($maxViewPort - $minViewPort)}))
+			#{$min} + #{strip-unit($max - $min)} *
+				(
+					(100vw - #{$minViewPort}) /
+						(#{strip-unit($maxViewPort - $minViewPort)})
+				)
 		);
 	}
 	@media (max-width: ($minViewPort - 1)) {

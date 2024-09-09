@@ -1,6 +1,6 @@
 # Eleventy Starter
 
-[![EditorConfig](../../actions/workflows/editorconfig.yml/badge.svg)](../../actions/workflows/editorconfig.yml) [![HTML](../../actions/workflows/html.yml/badge.svg)](../../actions/workflows/html.yml) [![CSS](../../actions/workflows/css.yml/badge.svg)](../../actions/workflows/css.yml) [![JavaScript](../../actions/workflows/javascript.yml/badge.svg)](../../actions/workflows/javascript.yml)
+[![EditorConfig](../../actions/workflows/editorconfig.yml/badge.svg)](../../actions/workflows/editorconfig.yml) [![HTML](../../actions/workflows/html.yml/badge.svg)](../../actions/workflows/html.yml) [![CSS](../../actions/workflows/css.yml/badge.svg)](../../actions/workflows/css.yml) [![JavaScript](../../actions/workflows/javascript.yml/badge.svg)](../../actions/workflows/javascript.yml) [![Type Check](../../actions/workflows/type-check.yml/badge.svg)](../../actions/workflows/type-check.yml)
 
 **Шаблон проекта для быстрого старта.  
 Работает на Node 18+**
@@ -252,21 +252,21 @@ contacts.yml
 Плагин postcss-assets позволяет инлайнить изображения прямо в код в Base64 кодировке (или в виде кода в случае с SVG):
 
 ```scss
-background: inline("sp.png");
+background: inline('sp.png');
 ```
 
 Так же позволяет подставить размеры картинки:
 
 ```scss
-width: width("sp.png");
+width: width('sp.png');
 ```
 
 ```scss
-height: height("sp.png");
+height: height('sp.png');
 ```
 
 ```scss
-background-size: size("sp.png");
+background-size: size('sp.png');
 ```
 
 ## Послезные ссылки

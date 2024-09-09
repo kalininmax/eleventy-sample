@@ -23,7 +23,7 @@ module.exports = async (props) => {
 		formats: format,
 		urlPath: '/assets/images/',
 		outputDir: PATHS.build.images,
-		sharpWebpOptions: { quality: 90 },
+		sharpWebpOptions: { quality: 95 },
 	};
 
 	const metadata = await Image(src, options);

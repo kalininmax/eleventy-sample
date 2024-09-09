@@ -34,6 +34,8 @@ module.exports = (config) => {
 
 	PATHS.src.copy.forEach((path) => config.addPassthroughCopy(path));
 
+	config.addWatchTarget('./src/**/*.*');
+
 	return {
 		dir: {
 			input: PATHS.src.root,

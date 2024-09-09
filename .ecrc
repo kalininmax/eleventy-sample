@@ -1,9 +1,7 @@
 {
 	"Exclude": [
 		"build-production",
-		"assets",
-		".prettierrc",
-		".stylelintrc"
+		"assets"
 	],
 	"SpacesAftertabs": true
 }
